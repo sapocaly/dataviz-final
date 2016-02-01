@@ -1,0 +1,115 @@
+html {
+    font-family: Montserrat, sans-serif;
+}
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #6D6B6B;
+    line-height: 1.7em
+}
+.container {
+    margin: 0 auto;
+    min-width: 580px;
+    max-width: 1400px;
+    background-color: #FFFEFF;
+    -moz-box-shadow: 0 0 15px #000;
+    -webkit-box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 15px #000;
+    overflow: hidden;
+}
+#diagram {
+    text-align: center;
+}
+svg {
+    font-size: 18px;
+    font-weight: 100;
+    max-width: 100%;
+    vector-effect: non-scaling-stroke;
+}
+.info,
+.label {
+    pointer-events: none;
+}
+.info text {
+    fill: white;
+}
+#circle circle {
+    fill: none;
+    pointer-events: all;
+}
+text {
+    cursor: default;
+    fill: #333;
+}
+.group-arc + text {
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+.group-arc.animate + text {
+    opacity: 0;
+}
+#circle path {
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+#circle:hover path.fade,
+#circle path.unselected {
+    opacity: 0;
+    pointer-events: none;
+}
+text.fade {
+    opacity: 0;
+}
+.group-arc {
+    cursor: pointer;
+}
+text.region {
+    font-size: 14px;
+}
+.chord {
+    opacity: 0.8;
+}
+.chord:hover {
+    opacity: 1;
+}
+.big-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    left: -25px;
+    font-weight: 500;
+}
+.sub-title {
+    position: relative;
+    left: -35px;
+    top: -35px;
+    font-size: 30px;
+    line-height: 1.1em;
+    opacity: 0.7;
+}
+.footer {
+    font-size: 20px;
+}
+.info-tab {
+    position: relative;
+    left: 35%;
+    font-size: 23px;
+    line-height: 1.1em;
+}
+.wrap {
+    position: relative;
+    top: -110px;
+}
+#line1 {
+    font-size: 43px;
+}
+#unit {
+    position: relative;
+    top: 20px;
+    left: 30%;
+    font-size: 20px;
+}
